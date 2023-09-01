@@ -1,0 +1,13 @@
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet } from "react-native";
+import { GluestackUIProvider, Text, Box, config } from "@gluestack-ui/themed";
+
+export default function App() {
+  return (
+    <GluestackUIProvider config={config.theme}>
+      <Box width="100%" justifyContent="center" alignItems="center">
+        <Text>Open up App.js to start working on your app!</Text>
+      </Box>
+    </GluestackUIProvider>
+  );
+}
